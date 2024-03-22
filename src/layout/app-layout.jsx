@@ -5,7 +5,7 @@ import { Header } from "./header/header";
 
 export const AppLayout = () => {
   return (
-    <div className="h-screen flex flex-col justify-between">
+    <div className="flex flex-col justify-between h-screen">
       <div className="wrapper">
         <header>
           <Header />

@@ -30,7 +30,6 @@ function SamplePrevArrow(props) {
 }
 
 const settings = {
-  dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
@@ -38,6 +37,7 @@ const settings = {
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
+
 };
 
 export const Banner = () => {
@@ -47,7 +47,7 @@ export const Banner = () => {
     <Slider  {...settings}>
       {data?.map((item) => (
         <div key={item.id}>
-          <img src={item.img}  alt="img" />
+          <img src={item.img} alt="img" />
         </div>
       ))}
     </Slider>
